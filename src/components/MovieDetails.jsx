@@ -64,7 +64,7 @@ const MovieDetails = ({
     document.title = `Movie| ${title}`;
 
     return function () {
-      document.title = "Popcorn";
+      document.title = "CineScope";
     };
   }, [title]);
 
