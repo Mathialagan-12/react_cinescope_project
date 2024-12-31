@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import useKey from "../../custom hooks/useKey";
 
 const Search = ({ query, setQuery }) => {
@@ -6,7 +6,6 @@ const Search = ({ query, setQuery }) => {
 
   useKey("Enter", function () {
     if (document.activeElement === inputEl.current) return;
-
     inputEl.current.focus();
     setQuery("");
   });
